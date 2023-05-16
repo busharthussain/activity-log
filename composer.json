@@ -1,0 +1,33 @@
+{
+    "name": "bushart/activitylog",
+    "description": "A simple modified log to database",
+    "type": "library",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://github.com/busharthussain/activity-log"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "bushart\\activitylog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "busharthussain",
+            "email": "busharthussain@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "bushart\\activitylog\\ActivityLogServiceProvider"
+            ]
+        }
+    }
+}
